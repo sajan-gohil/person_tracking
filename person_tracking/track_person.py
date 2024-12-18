@@ -49,7 +49,6 @@ def real_time_tracking(video_path=0):
         }
         for i in range(max_persons)
     }
-    out = cv2.VideoWriter('output.avi', cv2.VideoWriter_fourcc(*'XVID'), 20.0, (640, 480))
     while True:
         ret, frame = cap.read()
         if not ret:
@@ -138,7 +137,6 @@ def real_time_tracking(video_path=0):
         # Display the frame with overlay
         cv2.imshow('Real-Time Human Tracking', frame)
         # Write to file
-        out.write(frame)
         # Break loop on 'q' key press
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
