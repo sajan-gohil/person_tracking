@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "person-tracking"
+version = "0.1.0"
+description = ""
+authors = ["sajan-gohil <sajangohil9@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+opencv-python = "^4.10.0.84"
+tensorflow = "^2.18.0"
+pillow = "^11.0.0"
+opencv-contrib-python = "^4.10.0.84"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
